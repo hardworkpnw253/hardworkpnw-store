@@ -18,6 +18,8 @@ No build step. Pure HTML/CSS/JS + JPEG assets. Safe to deploy as-is to Vercel st
 ## Content notes
 - All 15 products, names, descriptions, prices, and Etsy market ranges are copied verbatim
   from the preview file `~/workspace/your_files/hardworkpnw-2nd-chance-workwear/`.
+
+<!-- Repo connected to Vercel project (hardworkpnw.store), Oct 2026 -->
 - 11 product images are the real concept renders; 4 products (jacket, beanie, sticker pack,
   pendant) use the preview's CSS graphic placeholders — no real photos exist for those yet.
 - No checkout backend by design. "Message us to order" opens an inquiry modal with the real
