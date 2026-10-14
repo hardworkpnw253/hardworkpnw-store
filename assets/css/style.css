@@ -507,3 +507,19 @@ h2 { margin: 0; font: 800 clamp(39px, 7vw, 78px)/.92 Oswald, sans-serif; letter-
 .tutorial ol { margin: 0; padding: 4px 24px 22px 44px; color: rgba(255,255,255,.82); }
 .tutorial ol li { margin-bottom: 10px; line-height: 1.55; }
 .tutorial ol li::marker { color: var(--red-hot); font-weight: 700; }
+
+/* ---------- Latest updates ---------- */
+.updates-list { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.update {
+  border: 1px solid rgba(255,255,255,.16); border-radius: 6px;
+  background: rgba(255,255,255,.03); padding: 20px 22px;
+}
+.update-date {
+  margin: 0 0 8px; color: var(--red-hot); font: 700 13px/1 Oswald, sans-serif;
+  letter-spacing: .18em; text-transform: uppercase;
+}
+.update h3 {
+  margin: 0 0 8px; font-family: Oswald, sans-serif; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .04em; font-size: 19px;
+}
+.update p:last-child { margin: 0; color: rgba(255,255,255,.75); }
