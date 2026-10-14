@@ -479,3 +479,31 @@ h2 { margin: 0; font: 800 clamp(39px, 7vw, 78px)/.92 Oswald, sans-serif; letter-
   .strap-track { animation: none; }
   .product-media img, .btn { transition: none; }
 }
+
+/* ---------- Tutorials accordion (ported from NWP build) ---------- */
+.tutorials { margin-top: 56px; }
+.tutorials h3 {
+  font-family: Oswald, sans-serif; font-weight: 800; text-transform: uppercase;
+  letter-spacing: .03em; font-size: clamp(24px, 4vw, 36px); margin: 10px 0 6px;
+}
+.tutorials-lede { color: rgba(255,255,255,.72); margin: 0 0 22px; max-width: 60ch; }
+.tutorial {
+  border: 1px solid rgba(255,255,255,.16); border-radius: 6px;
+  background: rgba(255,255,255,.03); margin-bottom: 12px; overflow: hidden;
+}
+.tutorial summary {
+  cursor: pointer; list-style: none; display: flex; align-items: center;
+  justify-content: space-between; gap: 12px; padding: 16px 20px;
+  font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .06em; font-size: 16px;
+}
+.tutorial summary::-webkit-details-marker { display: none; }
+.tutorial summary::after {
+  content: "+"; font-size: 24px; font-weight: 400; color: var(--red-hot);
+  flex-shrink: 0; transition: transform .2s ease;
+}
+.tutorial[open] summary::after { transform: rotate(45deg); }
+.tutorial summary:hover { color: var(--red-hot); }
+.tutorial ol { margin: 0; padding: 4px 24px 22px 44px; color: rgba(255,255,255,.82); }
+.tutorial ol li { margin-bottom: 10px; line-height: 1.55; }
+.tutorial ol li::marker { color: var(--red-hot); font-weight: 700; }
