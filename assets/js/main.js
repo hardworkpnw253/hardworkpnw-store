@@ -36,6 +36,7 @@
   var closeBtn = modal.querySelector(".modal-close");
   var productName = document.getElementById("order-modal-product");
   var emailBtn = document.getElementById("order-email");
+  var smsBtn = document.getElementById("order-sms");
   var lastFocused = null;
 
   function openModal(product) {
@@ -44,6 +45,9 @@
     emailBtn.href =
       "mailto:Hardworkpnw@yahoo.com?subject=" +
       encodeURIComponent("Order inquiry: " + (product || "HardworkPNW gear"));
+    smsBtn.href =
+      "sms:+15646543734?&body=" +
+      encodeURIComponent("Hi! I want to order: " + (product || "HardworkPNW gear"));
     backdrop.hidden = false;
     document.body.style.overflow = "hidden";
     closeBtn.focus();
